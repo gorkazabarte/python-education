@@ -39,3 +39,16 @@ except TypeError as type_error:
 list1: list = [1, 4, 9, 16, 25]
 indexing_list: list = list1[0]
 slicing_list: list = list1[1:3]
+
+
+def print_fibonucci(n: int) -> None:
+    """ Print the numbers of Fibonucci series less than n """
+    a, b = 0, 1
+    while a < n:
+        print(a)
+        a, b = b, a + b
+
+
+if __name__ == '__main__':
+    print_fibonucci(20)
+
